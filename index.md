@@ -2,9 +2,13 @@
 
 ## Welcome to GitHub Pages
 
+<ul>
 {% for post in site.posts %}
-* ({{ post.title }})[{{ post.url }}]
+<li>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</li>
 {% endfor %}
+</ul>
 
 You can use the [editor on GitHub](https://github.com/dgkim5360/dgkim5360.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
