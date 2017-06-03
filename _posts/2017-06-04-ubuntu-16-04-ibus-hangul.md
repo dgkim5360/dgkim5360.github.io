@@ -36,7 +36,7 @@ Ubuntu를 설치하고 처음으로 "Language Support"를 실행시키면 자동
 
 말이 장황했는데, 간단히 위의 태극 문양을 눌러보면 `hangul mode`를 볼 수 있다. 이 `hangul mode`가 켜져 있지 않으면 영어 타자를, 켜져 있으면 한글 타자를 쓸 수 있다. 그 밑에 setup을 눌러보자
 
-![ibus Hangul setup]({{site.baseurl}}/assets/img/ibus-hangul-05-setup.png)
+![ibus Hangul setup]({{site.baseurl}}/assets/img/ubuntu-ibus-hangul-05-setup.png)
 
 이제 여기서부터는 감이 잡힐 것이라 생각이 된다. 한글 입력과 관련된 다양한 설정을 할 수 있고, 토글 키도 설정할 수 있다. Hanja 탭에서는 한자 변환 키를 설정할 수 있다.
 
