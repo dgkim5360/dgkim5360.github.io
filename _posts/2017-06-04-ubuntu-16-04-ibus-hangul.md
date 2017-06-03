@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ubuntu 16.04에서 ibus 한글 설치 및 사용법
 category: linux
 tags:
