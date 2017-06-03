@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: a dev blog
+description: really, a dev blog.
+show_downloads: false
