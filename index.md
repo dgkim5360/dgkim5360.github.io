@@ -5,7 +5,7 @@
 <ul>
 {% for post in site.posts %}
 <li>
-<a href="{{ post.url }}">{{ post.title }} (permalink: {{ post.permalink }})</a>
+<a href="{{ post.url }}">{{ post.title }} (url: {{ post.url }})</a>
 </li>
 {% endfor %}
 </ul>
