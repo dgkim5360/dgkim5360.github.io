@@ -1,4 +1,5 @@
 ---
+layout: post
 title: how to install Redis in Ubuntu 16.04
 date: 2017-06-05 20:36:00 +0900
 categories:
@@ -9,6 +10,7 @@ tags:
   - redis
   - tutorial
   - installation
+comments: true
 ---
 
 ## tl;dr
