@@ -2,6 +2,5 @@
 
 ## a personal blog
 
-{% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }})
+{% for post in site.posts %}* [{{ post.title }}]({{ post.url }})
 {% endfor %}
