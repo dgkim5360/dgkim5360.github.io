@@ -1,6 +1,6 @@
-![{{site.baseurl}}]({{site.baseurl}}/assets/img/Kawhi_Leonard.jpg)
+![](/assets/img/Kawhi_Leonard.jpg)
 
-## Welcome to GitHub Pages {{site.baseurl}}
+## Welcome to GitHub Pages {{site.url}}
 
 <ul>
 {% for post in site.posts %}
