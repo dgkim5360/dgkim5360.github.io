@@ -2,5 +2,6 @@ theme: jekyll-theme-minimal
 title: tl;dr
 description: a dev blog.
 show_downloads: false
+google_analytics: UA-77164517-2
 gems:
   - jekyll-feed
