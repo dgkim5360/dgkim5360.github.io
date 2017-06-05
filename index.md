@@ -1,4 +1,4 @@
-![]({{site.baseurl}}/assets/img/Kawhi_Leonard.jpg)
+![{{site.baseurl}}]({{site.baseurl}}/assets/img/Kawhi_Leonard.jpg)
 
 ## Welcome to GitHub Pages {{site.baseurl}}
 
