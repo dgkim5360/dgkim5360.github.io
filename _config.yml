@@ -2,4 +2,3 @@ theme: jekyll-theme-minimal
 title: tl;dr
 description: a dev blog.
 show_downloads: false
-baseurl: https://dgkim5360.github.io
