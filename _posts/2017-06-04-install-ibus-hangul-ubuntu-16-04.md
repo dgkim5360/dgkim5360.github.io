@@ -1,5 +1,6 @@
 ---
-title: how to type Korean via iBus of Ubuntu 16.04
+layout: post
+title: how to install iBus-Hangul in Ubuntu 16.04
 date: 2017-06-04 14:13:00 +0900
 category: linux
 tags:
@@ -7,6 +8,7 @@ tags:
   - ibus-hangul
   - tutorial
   - installation
+comments: true
 ---
 ## 시작하기 앞서
 한글 사용자를 위한 글이니 한글로 작성하겠다.
