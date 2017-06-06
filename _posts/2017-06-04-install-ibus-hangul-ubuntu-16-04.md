@@ -2,6 +2,7 @@
 layout: post
 title: how to install iBus-Hangul in Ubuntu 16.04
 date: 2017-06-04 14:13:00 +0900
+permalink: pretty
 category: linux
 tags:
   - ubuntu 16.04
