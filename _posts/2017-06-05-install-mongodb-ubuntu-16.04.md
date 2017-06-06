@@ -10,12 +10,14 @@ tags:
   - redis
   - tutorial
   - installation
+references:
+  - https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-ubuntu
 comments: true
 ---
 
 ## tl;dr
 
-just see [official doc](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) or the following.
+Just see [official doc](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) or the following.
 
 ```shell
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6

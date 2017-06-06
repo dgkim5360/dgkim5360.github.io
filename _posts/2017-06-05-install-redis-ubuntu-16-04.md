@@ -34,7 +34,7 @@ It is always safer and simpler to install something from the official repository
 $ sudo apt install redis-server
 ```
 
-this command will install two packages: redis-server and redis-tools (its client tool).
+This command will install two packages: redis-server and redis-tools (its client tool).
 
 ## check installed
 
@@ -61,7 +61,7 @@ $ redis-cli
 PONG
 ```
 
-it is a normal behaviour of the session to print PONG as a answer of your `ping`. Then test the following set and get commands as an example.
+It is a normal behaviour of the session to print PONG as a answer of your `ping`. Then test the following set and get commands as an example.
 
 ```shell
 127.0.0.1:6379> set mykey somevalue
