@@ -6,9 +6,4 @@ google_analytics: UA-77164517-2
 gems:
   - jekyll-feed
   - jekyll-sitemap
-permalink: pretty
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#     values:
+permalink: /blog/:categories/:year/:month/:title/
