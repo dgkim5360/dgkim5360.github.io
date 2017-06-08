@@ -172,7 +172,7 @@ Promise.all([prom1, prom2]).then(console.log, console.log)
 
 * if only `prom1` rejects => `Promise.all` rejects in a second,
 * else if only `prom2` rejects => `Promise.all` rejects in 10 seconds,
-* else if both rejects => `Promise.all` rejects in a second right after `prom1` rejects,
+* else if both reject => `Promise.all` rejects in a second right after `prom1` rejects,
 * else if both resolve => `Promise.all` resolve in 10 seconds.
 
 You may check another method, namely `Promise.race`. Also MDN documents with its various examples would be helpful.
