@@ -4,8 +4,10 @@ title: a tutorial on Docker
 date: 2017-06-29 16:25:00 +0900
 categories:
   - docker
+  - linux
 tags:
   - tutorial
+  - ubuntu 16.04
 references:
   - https://docs.docker.com/get-started
 comments: true
