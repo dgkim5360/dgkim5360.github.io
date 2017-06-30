@@ -3,5 +3,6 @@ layout: default
 ---
 
 {% for post in site.posts %}
-<h3><a href="{{ post.url }}">{{ post.title }}</a><br/><i>{{ post.date }}</i></h3>
+<span>{% for cat in post.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %} <i>{{ post.date }}</i></span>
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {% endfor %}
