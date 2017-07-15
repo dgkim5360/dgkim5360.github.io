@@ -11,7 +11,9 @@ comments: true
 
 ## tl;dr
 
-This post shows the list of default shortcuts for Ubuntu 16.04. You can directly check this via `System Settings > Keyboard > Shortcuts`.
+This post shows the list of default shortcuts for Ubuntu 16.04. You can directly check this via `System Settings > Keyboard > Shortcuts` on your machine.
+
+Here is a notable issue: Even though your settings say that, for example, `ctrl alt 0` does "minimize window", `ctrl alt KP0` will do the job instead. Note that the symbol `KP0` refers to "Keypad number 0".
 
 ## system
 
@@ -23,7 +25,7 @@ This post shows the list of default shortcuts for Ubuntu 16.04. You can directly
 
 :--- | :---
 `alt tab` | move window
-`alt \`` | move window within the same program
+`` alt ` `` | move window within the same program
 `ctrl super up` | maximize window
 `ctrl super down` | restore window if it is maximized, minimize window otherwise
 `ctrl alt KP5` | toggle maximization state
