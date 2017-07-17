@@ -1,6 +1,6 @@
 ---
 layout: post
-title: duck typing vs. goose typing: Pythonic interfaces
+title: duck typing vs. goose typing, Pythonic interfaces
 date: 2017-07-18 00:20:00 +0900
 categories:
   - python
