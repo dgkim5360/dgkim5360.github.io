@@ -24,10 +24,9 @@ This post summarizes the Pythonic concept of interface, mainly by taking notes f
 
 > In the context of Object Oriented Programming, a protocol is an informal interface, defined only in documentation and not in code. For example, the sequence protocol in Python entails just the `__len__` and `__getitem__` methods. Any class `Spam` that implements those methods with the standard signature and semantics can be used anywhere a sequence is expected. Whether `Spam` is a subclass of this or that is irrelevant, all that matters is that it provides the necessary methods.
 
-The following example shows how the sequence protocol works.
+The following example shows how the sequence protocol works. `SequenceLikeClass` implements the sequence protocol by duck typing: to equip with special methods `__len__` and `__getitem__`, which are methods corresponding to the sequence protocol.
 
 ```python
-# SequenceLikeClass implements the sequence protocol by duck typing: to equip with special methods __len__ and __getitem__, which are methods corresnponding to the sequence protocol.
 class SequenceLikeClass:
     def __init__(self, items):
         self.sequence = list(items)
@@ -35,8 +34,11 @@ class SequenceLikeClass:
         return len(self.sequence)
     def __getitem__(self, position):
         return self.sequence[position]
+```
 
-# Although it does not inherit from sequence class like list, it behaves well like some sequence class.
+Although it does not inherit from sequence class like list, it behaves well like some sequence class.
+
+```python
 # instantiate
 >>> seq = SequenceLikeClass(range(5))
 # len works
