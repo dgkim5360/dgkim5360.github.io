@@ -109,5 +109,5 @@ int main () {
   n = operation (20, m, minus);
   cout <<n;
   return 0;
-}
+}  // output: 8
 ```
