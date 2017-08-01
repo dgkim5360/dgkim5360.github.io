@@ -7,13 +7,13 @@ categories:
 tags:
   - tutorial
 references:
-  - http://www.cplusplus.com/doc/tutorial/pointers/
+  - http://www.cplusplus.com/doc/tutorial/pointers
 comments: true
 ---
 
 ## tl;dr
 
-This post summarizes the reference document regarding C++ pointers. For more detailed introduction with comprehensive figures, see the reference.
+This post summarizes the reference document regarding C++ pointers. For more detailed introduction with comprehensive figures, see the reference below.
 
 ## operators dealing with memory addresses
 ```c++
