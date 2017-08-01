@@ -15,8 +15,8 @@ comments: true
 
 This post summarizes the reference document regarding C++ pointers. For more detailed introduction with comprehensive images, see the reference.
 
+## operators dealing with memory addresses
 ```c++
-/** operators dealing with memory addresses **/
 /* address-of operator "&" */
 int bar = 42;
 foo = &bar  // foo contains the address of bar
@@ -24,8 +24,10 @@ foo = &bar  // foo contains the address of bar
 /* dereference operator "*" */
 baz = *foo  // baz contains the value of bar, to which is pointed by foo
 baz == 42  // thus it's true
+```
 
-/** declaration syntax of pointers **/
+## declaration syntax of pointers
+```c++
 /* caution: this syntax is not related to dereference operator at all */
 int bar = 42;  // declare an int variable
 int * foo = &bar  // declare a pointer of int data type
@@ -33,15 +35,19 @@ int * foo = &bar  // declare a pointer of int data type
 /* also be careful with declaring pointers */
 int * p1, p2;  // p2 is not declared as a pointer
 int * p1, * p2;  // both are pointers
+```
 
-/** pointers and arrays **/
+## pointers and arrays
+```c++
 int arr[5];  // arr refers to the address of its first element (already allocated)
 int * p_arr;
 
 p_arr = arr;  // assign p_arr with the address of arr, it's valid
 arr = p_arr;  // invalid, arr cannot have another address
+```
 
-/** pointer arithmetics: it depends on sizeof(data type) **/
+## pointer arithmetics: it depends on sizeof(data type)
+```c++
 char * p_char;  // say p_char = 1000
 short * p_short;  // p_short = 2000
 long * p_long;  // p_long = 3000
@@ -54,8 +60,10 @@ long * p_long;  // p_long = 3000
 *(++p);  // increment pointer, and dereference incremented address
 ++(*p);  // dereference pointer, and increment the value it points to
 (*p)++;  // dereference pointer, and post-increment the value it points to
+```
 
-/** void pointers, null pointers **/
+## void pointers, null pointers
+```c++
 /* void pointers are not limited to data type */
 #include <iostream>
 using namespace std;
@@ -78,8 +86,10 @@ int main () {
 
 /* null pointers is literally nothing */
 int * p = nullptr, * q = 0;  // both are valid null pointers
+```
 
-/** points to functions **/
+## points to functions
+```c++
 #include <iostream>
 using namespace std;
 
