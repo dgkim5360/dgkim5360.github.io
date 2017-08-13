@@ -8,7 +8,7 @@ layout: default
 <h2>references</h2>
 <ul>
 {% for ref in page.references %}
-<li><a href="{{ref}}" target="_blank">{{ref}}</a></li>
+<li>{% if ref contains "http" %}<a href="{{ref}}" target="_blank">{{ref}}</a>{% else %}{{ref}}{% endif %}</li>
 {% endfor %}
 </ul>
 {% endif %}
