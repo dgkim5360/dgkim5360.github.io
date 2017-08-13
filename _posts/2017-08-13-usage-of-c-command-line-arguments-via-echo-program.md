@@ -1,6 +1,6 @@
 ---
 layout: post
-title: usage of C command-line arguments via the simple echo program
+title: usage of C command-line arguments via echo program
 date: 2017-08-13 14:45:00 +0900
 categories:
   - C
@@ -17,7 +17,7 @@ comments: true
 
 Below is an example code of `echo` program.
 
-```C
+```c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-## `argc` and `argv`
+## argc and argv
 
 `argc` is an integer representing the number of arguments, and `argv` is a pointer to an `char` array, i.e., a string array, which stores the argument strings. `argv` contains at least one string, which is the command itself. For example, from the echo command
 
@@ -41,7 +41,7 @@ $ echo hello, world
 Also note that `argv` has additional null pointer such that `argv[argc] == 0`.
 
 
-## pointer to a string array, `argv`
+## pointer to a string array, argv
 
 Since `argv` is a pointer, assuming it contains items `{"echo", "hello,", "world"}`, the following statements are valid.
 
