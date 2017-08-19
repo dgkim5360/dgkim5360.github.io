@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a brief summary of C++ pointers
+title: A brief summary of C++ pointers
 date: 2017-08-01 22:03:00 +0900
 categories:
   - C++

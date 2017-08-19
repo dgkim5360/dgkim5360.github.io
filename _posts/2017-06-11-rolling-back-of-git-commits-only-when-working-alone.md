@@ -1,9 +1,9 @@
 ---
 layout: post
-title: rolling back of git commits, only when working alone
+title: Rolling back of git commits, only when working alone
 date: 2017-06-11 17:40:00 +0900
 categories:
-  - git
+  - Git
 tags:
   - tutorial
 references:

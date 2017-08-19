@@ -1,12 +1,11 @@
 ---
 layout: post
-title: duck typing vs. goose typing, Pythonic interfaces
+title: Duck typing vs. goose typing, Pythonic interfaces
 date: 2017-07-18 00:20:00 +0900
 categories:
-  - python
+  - Python
 tags:
-  - python 3
-  - interface
+  - Python 3
   - tutorial
 references:
   - https://en.wikipedia.org/wiki/Duck_typing

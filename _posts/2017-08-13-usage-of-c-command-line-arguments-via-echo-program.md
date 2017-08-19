@@ -1,6 +1,6 @@
 ---
 layout: post
-title: usage of C command-line arguments via echo program
+title: Usage of C command-line arguments via echo program
 date: 2017-08-13 14:45:00 +0900
 categories:
   - C

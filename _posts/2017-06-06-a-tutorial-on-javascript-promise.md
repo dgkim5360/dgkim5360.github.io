@@ -1,9 +1,9 @@
 ---
 layout: post
-title: a tutorial on Javascript Promise
+title: A tutorial on Javascript Promise
 date: 2017-06-06 17:10:00 +0900
 categories:
-  - javascript
+  - Javascript
 tags:
   - promise
   - tutorial

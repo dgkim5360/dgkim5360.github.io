@@ -1,11 +1,11 @@
 ---
 layout: post
-title: a cheatsheet for Ubuntu shortcuts
+title: A cheatsheet for Ubuntu shortcuts
 date: 2017-07-15 14:02:00 +0900
 categories:
-  - linux
+  - Linux
 tags:
-  - ubuntu 16.04
+  - Ubuntu 16.04
 comments: true
 ---
 

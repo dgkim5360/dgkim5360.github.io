@@ -1,10 +1,10 @@
 ---
 layout: post
-title: how to install iBus-Hangul in Ubuntu 16.04
+title: How to install iBus-Hangul in Ubuntu 16.04
 date: 2017-06-04 14:13:00 +0900
-category: linux
+category: Linux
 tags:
-  - ubuntu 16.04
+  - Ubuntu 16.04
   - ibus-hangul
   - tutorial
   - installation
