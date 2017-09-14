@@ -50,7 +50,7 @@ def make_averager():
     return averager
 ```
 
-`avg` is a closure (for `averager`) because it reaches the list `series` outside the body of `averager` but the `series` is not global -- actually it is defined as a local variable of the function `make_averager`. You can inspect the object throught `__code__` and `__closure__` attributes.
+`avg` is a closure (for `averager`) because it reaches the list `series` outside the body of `averager` but the `series` is not global -- actually it is defined as a local variable of the function `make_averager`. You can inspect the object through `__code__` and `__closure__` attributes.
 
 ```python
 >>> avg.__code__.co_varnames
@@ -63,7 +63,7 @@ def make_averager():
 [10, 15, 20]
 ```
 
-I would just like to leave a use of the `nonlocal` declaration as an example below. The code itself tells us much of what the `nonlocal` does.
+I would just like to leave a usage of the `nonlocal` declaration as an example below. The code itself tells us much of what the `nonlocal` does.
 
 ```python
 def make_averager():  # improved in efficiency
@@ -93,7 +93,7 @@ def target():
 >>> target()
 a message from inner of deco
 ```
-It is notable that the decorated `target` refers the `inner` function, not `target` itself, i.e., the decorator `deco` replaces the decorated one. Check the below.
+It is notable that the decorated function `target` refers the `inner` function, not `target` itself, i.e., the decorator `deco` replaces the decorated one. Check the below.
 ```python
 >>> target
 <function deco.<locals>.inner at 0x10063b598>
