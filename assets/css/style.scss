@@ -2,3 +2,14 @@
 ---
 
 @import "{{site.theme}}";
+@media screen and (min-width: 1200px) {
+  .adsense-skyscrapper {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 22vh;
+  }
+}
+.adsense-skyscrapper {
+  display: none;
+}
