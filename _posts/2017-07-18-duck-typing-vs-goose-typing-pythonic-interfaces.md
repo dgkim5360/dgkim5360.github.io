@@ -8,6 +8,7 @@ tags:
   - Python 3
   - tutorial
 references:
+  - Fluent Python 1E, Ramalho
   - https://en.wikipedia.org/wiki/Duck_typing
   - https://docs.python.org/3/glossary.html#term-duck-typing
   - https://docs.python.org/3/reference/datamodel.html#special-method-names

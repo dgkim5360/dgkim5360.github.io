@@ -53,9 +53,9 @@ arr = p_arr;  // invalid, arr cannot have another address
 
 ## pointer arithmetics: it depends on sizeof(data type)
 ```c
-char * p_char;  // say p_char = 1000
-short * p_short;  // p_short = 2000
-long * p_long;  // p_long = 3000
+char *p_char;  // say p_char = 1000
+short *p_short;  // p_short = 2000
+long *p_long;  // p_long = 3000
 
 ++p_char;  // p_char = 1001
 ++p_short;  // p_short = 2002
@@ -90,7 +90,7 @@ int main () {
 }  // output: y, 1603
 
 /* null pointers is literally nothing */
-int * p = nullptr, * q = 0;  // both are valid null pointers
+int *p = nullptr, *q = 0;  // both are valid null pointers
 ```
 
 ## points to functions
