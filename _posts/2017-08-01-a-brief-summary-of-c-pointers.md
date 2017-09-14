@@ -32,6 +32,7 @@ baz == 42  // thus it's true
 > The declaration of the pointer ip,
 > `int *ip;`
 > is intended as a mnemonic; it says that the expression *ip is an int. This reasoning applies to function declaration as well.
+
 ```c
 int bar = 42;  // declare an int variable
 int *foo = &bar  // declare a pointer of int data type
