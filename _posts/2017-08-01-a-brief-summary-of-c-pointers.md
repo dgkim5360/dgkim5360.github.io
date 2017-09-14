@@ -3,11 +3,12 @@ layout: post
 title: A brief summary of C pointers
 date: 2017-08-01 22:03:00 +0900
 categories:
-  - C++
+  - C
 tags:
   - tutorial
 references:
   - http://www.cplusplus.com/doc/tutorial/pointers
+  - The C Programming Language 2E, Kernighan & Ritchie
 comments: true
 ---
 
@@ -27,20 +28,23 @@ baz == 42  // thus it's true
 ```
 
 ## declaration syntax of pointers
+
+> The declaration of the pointer ip,
+> ```int *ip;```
+> is intended as a mnemonic; it says that the expression *ip is an int. This reasoning applies to function declaration as well.
 ```c
-/* caution: this syntax is not related to dereference operator at all */
 int bar = 42;  // declare an int variable
-int * foo = &bar  // declare a pointer of int data type
+int *foo = &bar  // declare a pointer of int data type
 
 /* also be careful with declaring pointers */
-int * p1, p2;  // p2 is not declared as a pointer
-int * p1, * p2;  // both are pointers
+int *p1, p2;  // p2 is not declared as a pointer
+int *p1, *p2;  // both are pointers
 ```
 
 ## pointers and arrays
 ```c
 int arr[5];  // arr refers to the address of its first element (already allocated)
-int * p_arr;
+int *p_arr;
 
 p_arr = arr;  // assign p_arr with the address of arr, it's valid
 arr = p_arr;  // invalid, arr cannot have another address
