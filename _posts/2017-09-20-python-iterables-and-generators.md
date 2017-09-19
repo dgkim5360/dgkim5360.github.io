@@ -55,7 +55,7 @@ Waldo
 ## What are "iterables"
 How is the above `for` loop possible?
 
-> Whenever the interpreter needs to iterate over an object x, it automatically calls iter(x).
+> Whenever the interpreter needs to iterate over an object `x`, it automatically calls `iter(x)`.
 
 And the `iter` built-in function needs two methods of the object, namely `__iter__` and `__getitem__`.
 
