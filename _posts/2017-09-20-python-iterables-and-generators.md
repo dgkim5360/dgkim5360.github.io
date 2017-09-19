@@ -52,7 +52,7 @@ Waldo
 ['Hello', 'there', 'Mighty', ..., 'Waldo']
 ```
 
-## What is `iterables`
+## What is "iterables"
 How is the above `for` loop possible?
 
 > Whenever the interpreter needs to iterate over an object x, it automatically calls iter(x).
@@ -122,7 +122,7 @@ class Sentence:
         return (match.group() for match in RE_WORD.finditer(self.text))
 ```
 
-## Generators can `yield from` sub-generators
+## Generators can "yield from" sub-generators
 The below `chain` implementation tells us what the new keyword does for generators.
 ```python
 def chain(*iters):
@@ -133,5 +133,5 @@ def chain(*iters):
 ['A', 'B', 'C', 0, 1, 2]
 ```
 
-## `iter` can even take a normal function, not a generator
+## "iter" can even take a normal function, not a generator
 See the [docs](https://docs.python.org/3/library/functions.html#iter).
