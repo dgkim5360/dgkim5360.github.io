@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install iBus-Hangul in Ubuntu 16.04
+title: How to Install iBus-Hangul in Ubuntu 16.04
 date: 2017-06-04 14:13:00 +0900
 category: Linux
 tags:
@@ -32,7 +32,7 @@ Ubuntu를 설치하고 처음으로 "Language Support"를 실행시키면 자동
 
 없으면 "Install/Remove Languages..."를 눌러 "Korean"을 추가해주자. 그리고 재부팅을 한다.
 
-## text entry setting
+## Text entry setting
 이제 상태표시줄에서 언어 입력기 (`En`이라고 되어있는 것)를 눌러서 "Text Entry Settings..."를 눌러보자.
 
 `English (US)` 밖에 없을 것이다. `+` 버튼을 눌러서 `Korean (Hangul) (iBus)`를 추가한다. 그리고 모드 변경하는 키는 원하는 것으로 설정하면 된다. `Korean (Hangul) (iBus)`가 없다면, 재부팅을 했는지 체크해보자.
@@ -41,7 +41,7 @@ Ubuntu를 설치하고 처음으로 "Language Support"를 실행시키면 자동
 
 여기까지 세팅이 완료되면, 이제 설정한 변경 키를 통해 `En` 표시가 아름다운 태극 마크로 변경되는 것을 확인할 수 있다. 하지만 타자를 쳐보면 여전히 영어가 입력되는데, 당연한 것이니 부디 절망하지 말자.
 
-## iBus Hangul setup
+## iBus Hangul Setup
 왜 그런 것일까? 지금까지 무슨 일을 한 것인가? 우리는 `Korean (Hangul) (iBus)`라는 input source를 추가했다. `English (US)`라는 input source는 오직 영어만을 제공하고, `Korean (Hangul) (iBus)`는 영어와 한글 및 한자를 제공하는 input source이다. 따라서 우리가 input source를 `English (US)`에서 `Korean (Hangul) (iBus)`로 바꾼 것은 영어에서 한글로 타자를 바꾼 것이 아니라, 영어만 쓸 수 있는 input source에서 한/영을 쓸 수 있는 input source로 바꾼 것이다. 그리고 한/영 중에 영어로 설정되어있기 때문에 우리는 한글이 쳐지길 기대했지만 영어 타자가 나온 것이다.
 
 ![ibus menu](/assets/img/ubuntu-ibus-hangul-04-ibus-menu.png)

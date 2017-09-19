@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install Redis in Ubuntu 16.04
+title: How to Install Redis in Ubuntu 16.04
 date: 2017-06-05 20:36:00 +0900
 categories:
   - Linux
@@ -25,7 +25,7 @@ PONG
 somevalue
 ```
 
-## get it from the official repository
+## Get it from the official repository
 
 It is always safer and simpler to install something from the official repository.
 
@@ -35,7 +35,7 @@ $ sudo apt install redis-server
 
 This command will install two packages: redis-server and redis-tools (its client tool).
 
-## check installed
+## Check installed
 
 After the installation is done, you can confirm it via checking the services list.
 
@@ -50,7 +50,7 @@ From the above result you notice that the service of redis-server is already ins
 $ sudo service redis-server stop
 ```
 
-## simple usage of redis-cli
+## Simple usage of redis-cli
 
 You can test the basic usage of Redis via redis-cli which is installed with redis-server package. With the redis-server started as a service, redis-cli will open the session.
 

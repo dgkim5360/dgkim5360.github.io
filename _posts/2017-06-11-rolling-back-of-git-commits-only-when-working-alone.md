@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rolling back of git commits, only when working alone
+title: Rolling Back of Git Commits, Only When Working Alone
 date: 2017-06-11 17:40:00 +0900
 categories:
   - Git
@@ -19,7 +19,7 @@ This post summarizes git usage of reverting git commits: Rolling back, edit and 
 
 **Warning** Please use only when you work alone. The usage introduced here completely overwrites master, which means the history (between the latest commit and the commit of the roll-back point) is erased.
 
-## basics
+## The basics
 
 Truly basic commands are listed below.
 
@@ -48,7 +48,7 @@ git remote add origin https://github.com/yourid/repo.git
 git push origin master
 ```
 
-## roll back 1: checkout
+## Roll back 1: checkout
 
 `git checkout` moves HEAD to a certain commit, preserving every work. Once you `checkout` where you want, a commit of additional work results in another branch (temporary if you are in "detached HEAD" state). Then merging the current HEAD to master will do the job. [The official document about "detached HEAD"](https://git-scm.com/docs/git-checkout#_detached_head) is recommended to read.
 

@@ -29,7 +29,7 @@ def target():
 target = deco(target)
 ```
 
-## closures in Python
+## Closures in Python
 > Actually, a closure is function with an extended scope that encompasses non-global variables referenced in the body of the function but not defined there. It does not matter whether the function is a anonymous or not, what matters is that it can access non-global variables that are defined outside of its body.
 
 ```python
@@ -77,7 +77,7 @@ def make_averager():  # improved in efficiency
     return averager
 ```
 
-## a decorator is just a syntactic sugar
+## A decorator is just a syntactic sugar
 
 Let's start with the simplest.
 ```python
@@ -99,7 +99,7 @@ It is notable that the decorated function `target` refers the `inner` function, 
 <function deco.<locals>.inner at 0x10063b598>
 ```
 
-## decorators are executed at import time
+## Decorators are executed at import time
 
 > A key feature of decorators is that they run right after the decorated function is defined. That is usually at **import time**, i.e., when a module is loaded by Python.
 
@@ -152,7 +152,7 @@ no greeting by f3
 
 The registering behavior occurs before the `main` function is called. This example shows **import time vs. run time** in that the decorator runs when the decorated functions are imported, but the decorated functions run as they are explicitly called.
 
-## a little bit serious example: a time-checking decorator
+## A little bit serious example: a time-checking decorator
 Below is the code for the `clock` decorator which measures the elapsed time and kindly prints the result of the decorated function. Also the built-in `functools.wraps` decorator is worth learning; go search it =]
 
 ```python

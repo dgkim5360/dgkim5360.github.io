@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A brief summary of C pointers
+title: A Brief Summary of C Pointers
 date: 2017-08-01 22:03:00 +0900
 categories:
   - C
@@ -16,7 +16,7 @@ comments: true
 
 This post summarizes the reference document regarding C pointers. For more detailed introduction with comprehensive figures, see the reference below.
 
-## operators dealing with memory addresses
+## Operators dealing with memory addresses
 ```c
 /* address-of operator "&" */
 int bar = 42;
@@ -27,7 +27,7 @@ baz = *foo  // baz contains the value of bar, to which is pointed by foo
 baz == 42  // thus it's true
 ```
 
-## declaration syntax of pointers
+## Declaration syntax of pointers
 
 > The declaration of the pointer ip,
 > `int *ip;`
@@ -42,7 +42,7 @@ int *p1, p2;  // p2 is not declared as a pointer
 int *p1, *p2;  // both are pointers
 ```
 
-## pointers and arrays
+## Pointers and arrays
 ```c
 int arr[5];  // arr refers to the address of its first element (already allocated)
 int *p_arr;
@@ -51,7 +51,7 @@ p_arr = arr;  // assign p_arr with the address of arr, it's valid
 arr = p_arr;  // invalid, arr cannot have another address
 ```
 
-## pointer arithmetics: it depends on sizeof(data type)
+## Pointer arithmetics: it depends on sizeof(data type)
 ```c
 char *p_char;  // say p_char = 1000
 short *p_short;  // p_short = 2000
@@ -67,7 +67,7 @@ long *p_long;  // p_long = 3000
 (*p)++;  // dereference pointer, and post-increment the value it points to
 ```
 
-## void pointers, null pointers
+## Void pointers, null pointers
 ```c
 /* void pointers are not limited to data type */
 #include <iostream>
@@ -93,7 +93,7 @@ int main () {
 int *p = nullptr, *q = 0;  // both are valid null pointers
 ```
 
-## points to functions
+## Points to functions
 ```c
 #include <iostream>
 using namespace std;

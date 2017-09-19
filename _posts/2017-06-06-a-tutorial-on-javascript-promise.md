@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A tutorial on Javascript Promise
+title: A Tutorial on Javascript Promise
 date: 2017-06-06 17:10:00 +0900
 categories:
   - Javascript
@@ -77,7 +77,7 @@ else both resolve => p.all resolve in 10 seconds
 */
 ```
 
-## basic syntax
+## The basic syntax
 A `Promise` object needs a function `(resolve, reject) => {}` as an argument to deal with an async job and then deliver its returning values.
 
 ```javascript
@@ -108,7 +108,7 @@ promise 1 resolved
 
 Also note that the order of `console.log` output, it is async!
 
-## then is thenable
+## Then is thenable
 
 "thenable" means returning a promise. Of course, a naive function is not thenable.
 
@@ -148,7 +148,7 @@ prom1.then().then(console.log).catch(console.log)
 prom1.then()/*.then(). ... .then()*/.then(console.log, console.log) // same results
 ```
 
-## dealing with multiple promises
+## Dealing with multiple promises
 
 Class methods `Promise.all` and `Promise.race` is here for us. In this post, only `Promise.all` method is explained via the following code.
 

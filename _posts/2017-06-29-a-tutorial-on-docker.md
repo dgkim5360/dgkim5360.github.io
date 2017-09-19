@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A tutorial on Docker
+title: A Tutorial on Docker
 date: 2017-06-29 16:25:00 +0900
 categories:
   - Docker
@@ -17,7 +17,7 @@ comments: true
 
 This post summarizes [Get started with Docker](https://docs.docker.com/get-started) and its commands.
 
-## installation
+## Installation
 
 Install the community edition of docker:
 ```shell
@@ -46,7 +46,7 @@ sudo apt purge docker-ce
 sudo rm -rf /var/lib/docker
 ```
 
-## containers
+## Containers
 
 > An image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and config files.
 >
@@ -102,7 +102,7 @@ sudo docker push <username>/<repository>:<tag>
 sudo docker run <username>/<repository>:<tag>
 ```
 
-## services
+## Services
 
 > Services are really just containers in production.
 
@@ -121,7 +121,7 @@ docker-compose --version
 
 Add your services in `docker-compose.yml`, see [an example](https://docs.docker.com/get-started/part3/#your-first-docker-composeyml-file).
 
-## swarms
+## Swarms
 
 > A swarm is a group of machines that are running Docker and joined into a cluster.
 >
@@ -182,7 +182,7 @@ docker-machine ssh myvm1 "docker swarm leave -f"
 docker-machine rm $(docker-machine ls -q)
 ```
 
-## stacks
+## Stacks
 
 > A stack is a group of interrelated services that share dependencies, and can be orchestrated and scaled together. A single stack is capable of defining and coordinating the functionality of an entire application.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A cheatsheet for Ubuntu shortcuts
+title: A Cheatsheet for Ubuntu Shortcuts
 date: 2017-07-15 14:02:00 +0900
 categories:
   - Linux
@@ -15,13 +15,13 @@ This post shows the list of default shortcuts for Ubuntu 16.04. You can directly
 
 Here is a notable issue: Even though your settings say that, for example, `ctrl alt 0` does "minimize window", `ctrl alt KP0` will do the job instead. Note that the symbol `KP0` refers to "Keypad number 0".
 
-## system
+## System
 
 :--- | :---
 `ctrl alt l` | Lock screen
 `ctrl alt del` | Log out
 
-## windows
+## Windows
 
 :--- | :---
 `alt tab` | move window
@@ -36,7 +36,7 @@ Here is a notable issue: Even though your settings say that, for example, `ctrl 
 `alt F8` | resize window by moving a mouse pointer
 `alt space` | activate the window menu
 
-## navigation
+## Navigation
 
 :--- | :---
 `ctrl super d` | hide all normal windows and revert
@@ -50,21 +50,22 @@ Here is a notable issue: Even though your settings say that, for example, `ctrl 
 `shift ctrl alt right` | move window to right workspace and switch to right workspace
 `shift ctrl alt up` | move window to upper workspace and switch to upper workspace
 `shift ctrl alt down` | move window to lower workspace and switch to lower workspace
+`super s` | switch between workspaces
 
-## launchers
+## Launchers
 
 :--- | :---
 `alt` | show the HUD (head up display)
 `ctrl alt t` | launch terminal
 
 
-## typing
+## Typing
 
 :--- | :---
 `super space` | switch to next source
 `shift super space` | switch to previous source
 
-## screenshots
+## Screenshots
 
 :--- | :---
 `print` | take screenshot

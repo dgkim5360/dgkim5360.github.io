@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install MongoDB in Ubuntu 16.04
+title: How to Install MongoDB in Ubuntu 16.04
 date: 2017-06-05 20:36:00 +0900
 categories:
   - Linux

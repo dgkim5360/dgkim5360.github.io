@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My initial setup list for Ubuntu Desktop
+title: My Initial Setup List for Ubuntu Desktop
 date: 2017-08-20 00:01:00 +0900
 categories:
   - Linux

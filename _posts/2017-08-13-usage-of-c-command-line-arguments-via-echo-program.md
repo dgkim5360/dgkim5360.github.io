@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Usage of C command-line arguments via echo program
+title: Usage of C Command-line Arguments via Echo Program
 date: 2017-08-13 14:45:00 +0900
 categories:
   - C
@@ -41,7 +41,7 @@ $ echo hello, world
 Also note that `argv` has additional null pointer such that `argv[argc] == 0`.
 
 
-## pointer to a string array, argv
+## Pointer to a string array, argv
 
 Since `argv` is a pointer, assuming it contains items `{"echo", "hello,", "world"}`, the following statements are valid.
 

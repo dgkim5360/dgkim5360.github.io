@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duck typing vs. goose typing, Pythonic interfaces
+title: Duck Typing vs. Goose Typing, Pythonic Interfaces
 date: 2017-07-18 00:20:00 +0900
 categories:
   - Python
@@ -20,7 +20,7 @@ comments: true
 
 This post summarizes the Pythonic concept of interface, mainly by taking notes from the chapter 11 of the book "Fluent Python".
 
-## duck typing and Python protocols
+## Duck typing and Python protocols
 
 > In the context of Object Oriented Programming, a protocol is an informal interface, defined only in documentation and not in code. For example, the sequence protocol in Python entails just the `__len__` and `__getitem__` methods. Any class `Spam` that implements those methods with the standard signature and semantics can be used anywhere a sequence is expected. Whether `Spam` is a subclass of this or that is irrelevant, all that matters is that it provides the necessary methods.
 
@@ -72,7 +72,7 @@ True
 1 # randomly chosen among 0, 1, 2, 3, and 4
 ```
 
-## goose typing and ABCs (abstract base classes)
+## Goose typing and ABCs (abstract base classes)
 
 ABCs makes protocols explicit.
 
