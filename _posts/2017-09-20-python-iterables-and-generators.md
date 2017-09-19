@@ -52,7 +52,7 @@ Waldo
 ['Hello', 'there', 'Mighty', ..., 'Waldo']
 ```
 
-## What is "iterables"
+## What are "iterables"
 How is the above `for` loop possible?
 
 > Whenever the interpreter needs to iterate over an object x, it automatically calls iter(x).
