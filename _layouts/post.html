@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 
 {% if page.references %}
-<h2>references</h2>
+<h2>References</h2>
 <ul>
 {% for ref in page.references %}
 <li>{% if ref contains "http" %}<a href="{{ref}}" target="_blank">{{ref}}</a>{% else %}{{ref}}{% endif %}</li>
