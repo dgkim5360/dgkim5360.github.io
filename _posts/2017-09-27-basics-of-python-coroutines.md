@@ -133,10 +133,12 @@ NameError: ...  # unhandled exception causes the coroutine to stop
 'GEN_CLOSED'
 ```
 
-## Coroutines can return via the exception (Python3.4+)
-We visit the `averager` again, but in this stage it does not yield every single incremental average but returns the final average.
+## Coroutines can return via the exception
+We visit the `averager` again, but in this stage it does not yield every single incremental average but returns the final average. From Python 3.4+ it is possible for coroutines to be able to return.
+
 ```python
 from collections import namedtuple
+
 Result = namedtuple('Result', 'count average')
 
 @coroutine
@@ -157,7 +159,7 @@ def coro_averager_return():
 >>> averager.send(None)  # stop it on purpose
 StopIteration: Result(count=2, average=15.0)
 ```
-Unfortunately its `Result` is delivered via `StopIteration` exception. We may get the `Result` by manual catching the exception value.
+Unfortunately its `Result` is delivered via `StopIteration` exception. We may get the `Result` by manually catching the exception value.
 ```python
 >>> try:
 ...     averager.send(None)
@@ -169,7 +171,7 @@ Result(count=2, average=15.0)
 ```
 > This roundabout way of getting the return value from a coroutine makes more sense when we realize it was defined as part of PEP 380, and the yield from construct handles it automatically by catching `StopIteration` internally. This is analogous to the use of `StopIteration` in for loops: the exception is handled by the loop machinery in a way that is transparent to the user. In the case of yield from , the interpreter not only consumes the `StopIteration`, but its value attribute becomes the value of the yield from expression itself.
 
-## The brand-new `yield from`
+## The brand-new "yield from"
 This Python keyword (available in Python 3.3+) pipes the generators and coroutines in a smooth manner.
 
 > When a generator `gen` calls yield from `subgen()`, the `subgen` takes over and will yield values to the caller of `gen`; the caller will in effect drive `subgen` directly. Meanwhile `gen` will be blocked, waiting until `subgen` terminates.
