@@ -176,7 +176,7 @@ This Python keyword (available in Python 3.3+) pipes the generators and coroutin
 
 > When a generator `gen` calls `yield from` `subgen()`, the `subgen` takes over and will yield values to the caller of `gen`; the caller will in effect drive `subgen` directly. Meanwhile `gen` will be blocked, waiting until `subgen` terminates.
 
-For an intuitive example, we revisit (the usage of Python generator using `yield from`)[...].
+For an intuitive example, we revisit [the usage of Python generator using `yield from`](/blog/python/2017/09/closures-and-decorators-in-python/).
 ```python
 def chain(*iters):
     for i in iters:
