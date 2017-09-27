@@ -189,10 +189,11 @@ def chain(*iters):
 
 > The main feature of `yield from` is to open a bidirectional channel from the outermost caller to the innermost subgenerator, so that values can be sent and yielded back and forth directly from them, and exceptions can be thrown all the way in without adding a lot of exception handling boilerplate code in the intermediate coroutines.
 
-You can see how the behaviors of subgenerators propagate through `yield from` pipes. I left the example from the book and this is worth chewing. Note that the result of `yield from` is what the coroutine returns but we do not have to manage any exception handling. `yield from`
+You can see how the behaviors of subgenerators propagate through `yield from` pipes. I left the example from the book and this is worth chewing. Note that the result of `yield from` is what the coroutine returns but we do not have to manage any exception handling. `yield from` deals with it.
 
 ```python
 from collections import namedtuple
+
 Result = namedtuple('Result', 'count average')
 
 # the subgenerator
@@ -256,4 +257,5 @@ $ python3 coroaverager3.py
 10 girls averaging 42.04kg
 10 girls averaging 1.43m
 ```
-Here is the end of the summary. Much more comprehensive examples can be found in the references. The taxi simulation in Fluent Python is easy to follow and DaBeaz includes comprehensive examples dealing with coroutines but no help of `yield from` (slides made in 2009). We actually see that "delegating subgenerators" gets complicated without the power of `yield from`.
+
+Here is the end of the basic summary. Much more comprehensive examples can be found in the references. The taxi simulation in Fluent Python is relatively easy to follow and DaBeaz includes comprehensive examples dealing with coroutines but no help of `yield from` (slides made in 2009, but Python 3.4 released in 2014). We actually see that "delegating subgenerators" gets complicated without the power of `yield from`.
