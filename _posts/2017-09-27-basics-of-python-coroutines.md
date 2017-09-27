@@ -174,7 +174,7 @@ Result(count=2, average=15.0)
 ## The brand-new "yield from"
 This Python keyword (available in Python 3.3+) pipes the generators and coroutines in a smooth manner.
 
-> When a generator `gen` calls yield from `subgen()`, the `subgen` takes over and will yield values to the caller of `gen`; the caller will in effect drive `subgen` directly. Meanwhile `gen` will be blocked, waiting until `subgen` terminates.
+> When a generator `gen` calls `yield from` `subgen()`, the `subgen` takes over and will yield values to the caller of `gen`; the caller will in effect drive `subgen` directly. Meanwhile `gen` will be blocked, waiting until `subgen` terminates.
 
 For an intuitive example, we revisit (the usage of Python generator using `yield from`)[...].
 ```python
