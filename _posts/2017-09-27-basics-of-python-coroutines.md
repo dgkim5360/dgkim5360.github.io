@@ -17,11 +17,11 @@ comments: true
 ---
 
 ## tl;dr
-This post mainly summarizes the chapter 16 of Fluent Python by Ramalho. Please check the book for more detailed examples and usages.
+This post mainly summarizes the chapter 16 of Fluent Python by Ramalho. Please check the references for more detailed examples and usages.
 
 > A coroutine is syntactically like a generator.
 
-Here is an example of the averager, once implemented via [the closure](/blog/python/2017/09/closures-and-decorators-in-python/).
+Here is an example of the averager, already implemented via [the closure](/blog/python/2017/09/closures-and-decorators-in-python/).
 
 ```python
 def co_averager():
