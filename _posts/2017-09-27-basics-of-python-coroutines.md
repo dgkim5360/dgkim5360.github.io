@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python Coroutines
+title: Basics of Python Coroutines
 date: 2017-09-27 19:44:00 +0900
 categories:
   - Python
