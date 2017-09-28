@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The first step of Python Virtualenvwrapper for Ubuntu
+title: The First Step of Python Virtualenvwrapper for Ubuntu
 date: 2017-09-28 21:20:00 +0900
 categories:
   - Python
