@@ -46,7 +46,6 @@ def co_averager():
 
 ## Basic workflow of a coroutine
 Prior to the above `co_averager`, the simpler example is introduced here to illustrate the basic workflow of Python coroutine. Check the status of a coroutine and what it does via `yield` and `send`.
-`simple_coro2`
 ```python
 def co_example(a):
     print('-> started: a =', a)
