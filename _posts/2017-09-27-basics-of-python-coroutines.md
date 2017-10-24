@@ -19,6 +19,8 @@ comments: true
 ## tl;dr
 This post mainly summarizes the chapter 16 of Fluent Python by Ramalho. Please check the references for more detailed examples and usages.
 
+A generator yields data for me, but I pushes data to a coroutine which deals with the data. They operate in kind of the opposite manner with almost the same code.
+
 > A coroutine is syntactically like a generator.
 
 Here is an example of the averager, already implemented via [the closure](/blog/python/2017/09/closures-and-decorators-in-python/).
@@ -75,6 +77,8 @@ StopIteration: ...  # Exception thrown
 'GEN_CLOSED'
 ```
 
+When the coroutine object hits `yield`, which is drived by the `next` function and `send` method, it stops running and waits for actions from its consumer. This workflow is important to catch how the `asyncio` goes to work.
+
 The `GEN_CREATED` status implies that the coroutine has not started and therefore it does not exploit `send` yet; we have to move on the `next` step to advance the coroutine to the first `yield`. This action is called "priming" a coroutine. The below decorator for priming coroutine is convenient sometimes.
 
 ```python
@@ -94,7 +98,7 @@ def coroutine(func):
 A coroutine is closed when it raises an exception which is not handled by itself.
 ```python
 >>> averager = coro_averager()
->>> averager.send(100)  # possible if it is @corotine decorated
+>>> averager.send(100)  # possible if it is @coroutine decorated
 100.0
 >>> averager.send('awkward hello')
 TypeError: ...
@@ -111,7 +115,7 @@ def coro_exc_handle():
     while True:
         try:
             x = yield
-        except:
+        except TypeError:
             print('TypeError handled, and continues to work...')
         else:
             print('-> coroutine received: {!r}'.format(x))
@@ -133,7 +137,7 @@ NameError: ...  # unhandled exception causes the coroutine to stop
 ```
 
 ## Coroutines can return via the exception
-We visit the `averager` again, but in this stage it does not yield every single incremental average but returns the final average. From Python 3.4+ it is possible for coroutines to be able to return.
+We visit the `averager` again, but in this stage it does not yield every single incremental average but returns the final average value. From Python 3.4+ it is possible for coroutines to be able to return.
 
 ```python
 from collections import namedtuple
@@ -168,6 +172,7 @@ Unfortunately its `Result` is delivered via `StopIteration` exception. We may ge
 >>> result
 Result(count=2, average=15.0)
 ```
+
 > This roundabout way of getting the return value from a coroutine makes more sense when we realize it was defined as part of PEP 380, and the yield from construct handles it automatically by catching `StopIteration` internally. This is analogous to the use of `StopIteration` in for loops: the exception is handled by the loop machinery in a way that is transparent to the user. In the case of yield from , the interpreter not only consumes the `StopIteration`, but its value attribute becomes the value of the yield from expression itself.
 
 ## The brand-new "yield from"
@@ -176,6 +181,7 @@ This Python keyword (available in Python 3.3+) pipes the generators and coroutin
 > When a generator `gen` calls `yield from` `subgen()`, the `subgen` takes over and will yield values to the caller of `gen`; the caller will in effect drive `subgen` directly. Meanwhile `gen` will be blocked, waiting until `subgen` terminates.
 
 For an intuitive example, we revisit [the usage of Python generator using `yield from`](/blog/python/2017/09/python-iterables-and-generators/).
+
 ```python
 def chain(*iters):
     for i in iters:
