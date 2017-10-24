@@ -87,7 +87,7 @@ class SizedClass(Sized):
         print('hello')
 
 >>> sc = SizedClass()  # without __len__, Python gives us an error when instantiating, not importing
-TypeError: Can't instantiate abstract class SizedClass with abstract methods __len__
+# TypeError: Can't instantiate abstract class SizedClass with abstract methods __len__
 
 
 class RealSizedClass(Sized):  # let's redefine
