@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The First Step for Python Asnycio with Coroutines
+title: The First Step for Python Asyncio with Coroutines
 date: 2017-10-24 23:30:00 +0900
 categories:
   - Python
