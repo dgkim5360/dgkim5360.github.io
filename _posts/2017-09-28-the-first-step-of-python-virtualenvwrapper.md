@@ -6,7 +6,6 @@ categories:
   - Python
 tags:
   - virtualenv
-  - Ubuntu
   - tutorial
 references:
   - http://virtualenvwrapper.readthedocs.io/en/stable
