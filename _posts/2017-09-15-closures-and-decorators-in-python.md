@@ -9,7 +9,6 @@ tags:
   - tutorial
 references:
   - Fluent Python 1E, Ramalho
-comments: true
 ---
 
 ## tl;dr

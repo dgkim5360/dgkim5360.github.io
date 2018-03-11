@@ -18,7 +18,6 @@ references:
   - http://www.dabeaz.com/coroutines/Coroutines.pdf
   - https://stackoverflow.com/questions/40571786/asyncio-coroutine-vs-async-def
   - https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5
-comments: true
 ---
 
 ## tl;dr

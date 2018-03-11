@@ -10,7 +10,6 @@ references:
   - https://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit
   - https://git-scm.com/docs/git-checkout
   - https://git-scm.com/docs/git-reset
-comments: true
 ---
 
 ## tl;dr

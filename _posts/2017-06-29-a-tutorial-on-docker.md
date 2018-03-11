@@ -10,7 +10,6 @@ tags:
   - Ubuntu 16.04
 references:
   - https://docs.docker.com/get-started
-comments: true
 ---
 
 ## tl;dr

@@ -12,7 +12,6 @@ references:
   - https://www.python.org/dev/peps/pep-0255
   - https://www.python.org/dev/peps/pep-0380
   - https://docs.python.org/3/library/functions.html#iter
-comments: true
 ---
 
 ## tl;dr

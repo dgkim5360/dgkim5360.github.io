@@ -11,7 +11,6 @@ references:
   - https://libgit2.github.io
   - https://stackoverflow.com/questions/918886
   - https://github.com/dgkim5360/arch-linux-configuration-files#(shameless plug)
-comments: true
 ---
 
 ## tl;dr

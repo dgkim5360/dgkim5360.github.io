@@ -9,7 +9,6 @@ tags:
   - tutorial
 references:
   - https://pymotw.com/3/pdb
-comments: true
 ---
 
 ## tl;dr

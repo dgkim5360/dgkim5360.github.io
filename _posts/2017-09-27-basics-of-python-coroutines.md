@@ -13,7 +13,6 @@ references:
   - https://www.python.org/dev/peps/pep-0380
   - https://docs.python.org/3/whatsnew/3.3.html#pep-380  
   - http://www.dabeaz.com/coroutines/Coroutines.pdf
-comments: true
 ---
 
 ## tl;dr

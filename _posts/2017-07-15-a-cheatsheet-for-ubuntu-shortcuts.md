@@ -6,7 +6,6 @@ categories:
   - Linux
 tags:
   - Ubuntu 16.04
-comments: true
 ---
 
 ## tl;dr

@@ -10,7 +10,6 @@ tags:
 references:
   - http://virtualenvwrapper.readthedocs.io/en/stable
   - https://virtualenv.pypa.io/en/stable
-comments: true
 ---
 
 ## tl;dr

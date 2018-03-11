@@ -13,7 +13,6 @@ references:
   - https://docs.python.org/3/glossary.html#term-duck-typing
   - https://docs.python.org/3/reference/datamodel.html#special-method-names
   - https://docs.python.org/3/glossary.html#term-abstract-base-class
-comments: true
 ---
 
 ## tl;dr

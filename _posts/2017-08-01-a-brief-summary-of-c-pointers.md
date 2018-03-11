@@ -9,7 +9,6 @@ tags:
 references:
   - http://www.cplusplus.com/doc/tutorial/pointers
   - The C Programming Language 2E, Kernighan & Ritchie
-comments: true
 ---
 
 ## tl;dr

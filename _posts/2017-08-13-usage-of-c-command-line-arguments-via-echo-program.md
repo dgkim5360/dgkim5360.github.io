@@ -8,7 +8,6 @@ tags:
   - tutorial
 references:
   - The C Programming Language 2E, Kernighan & Ritchie
-comments: true
 ---
 
 ## tl;dr

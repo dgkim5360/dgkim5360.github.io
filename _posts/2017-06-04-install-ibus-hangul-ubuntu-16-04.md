@@ -8,7 +8,6 @@ tags:
   - ibus-hangul
   - tutorial
   - installation
-comments: true
 ---
 ## 시작하기 앞서
 한글 사용자를 위한 글이니 한글로 작성하겠다.

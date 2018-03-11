@@ -10,7 +10,6 @@ tags:
 references:
   - The Element of Statistical Learning, 2E, Hastie et al.
   - https://github.com/dgkim5360/the-elements-of-statistical-learning-notebooks#(shameless plug)
-comments: true
 ---
 
 ## tl;dr
