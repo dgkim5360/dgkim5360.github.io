@@ -21,7 +21,7 @@ A bunch of Git repositories to check, fetch, and merge (or fast-forward pull) tr
 #!/bin/sh
 # Written by Don Kim (dgkimdev@gmail.com)
 #
-# It reads "/path/to/repo:branchname" and update it (via `git up`).
+# It reads "/path/to/repo:branchname" and updates it (via `git up`).
 #
 # If you don't have `git up`, check this and consider it;
 # https://stackoverflow.com/questions/918886
