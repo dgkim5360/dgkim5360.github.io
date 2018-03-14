@@ -4,7 +4,6 @@ title: A Tutorial on Docker
 date: 2017-06-29 16:25:00 +0900
 categories:
   - Docker
-  - Linux
 tags:
   - tutorial
   - Ubuntu 16.04
