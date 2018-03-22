@@ -10,7 +10,7 @@ tags:
 references:
   - https://libgit2.github.io
   - https://stackoverflow.com/questions/918886
-  - https://github.com/dgkim5360/arch-linux-configuration-files#(shameless plug)
+  - https://github.com/dgkim5360/desktop-configurations#(shameless plug)
 ---
 
 ## tl;dr
@@ -58,7 +58,7 @@ $ ~/.local/bin/pully < ~/.gitrepos
 
 As it seems lengthy to type, I added it as an alias `pully` in `.bashrc`.
 
-So far, so good. My whole configuration files are on [my Github repository](https://github.com/dgkim5360/arch-linux-configuration-files).
+So far, so good. My whole configuration files are on [my Github repository](https://github.com/dgkim5360/desktop-configurations).
 
 ## Why do the Git repos bother you?
 Here Git repositories are for the package source code.
