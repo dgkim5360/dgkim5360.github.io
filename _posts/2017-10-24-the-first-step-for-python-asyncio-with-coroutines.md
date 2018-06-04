@@ -65,7 +65,7 @@ def main():
     loop = asyncio.get_event_loop()
     result = loop.run_until_complete(supervisor())
     loop.close()
-    print('answer: ', result
+    print('answer: ', result)
 
 
 if __name__ == '__main__':
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
 The `asyncio` constructs concurrency with coroutines driven by an **event loop**.
 
-Please note that the latest version of Python when the book has been written was 3.4, when `async` and `await` keyword was not there yet. Here goes 3.5 version of the spinner example.
+Please note that the latest version of Python when the book has been written was 3.4, when `async` and `await` keywords were not there yet. Here goes 3.5 version of the spinner example.
 
 ```python
 async def spin(message):
@@ -111,13 +111,13 @@ if __name__ == '__main__':
 ```
 
 ## Introduction
-Before `asyncio` arrived, there was not a strict distinction between a generator and a coroutine. Sometimes one could tell "this is a coroutine" because it contains `= yield` syntax (implying coroutines are for data pipe-lining), but it does not apply always.
+Before `asyncio` arrived, there was not a strict distinction between a generator and a coroutine. Sometimes one could tell "this is a coroutine" because it contains the `= yield` syntax (implying coroutines are for data pipe-lining), but it does not apply always.
 
-A traditional coroutine focuses to deals with data as its consumer sends data (or exceptions) to it. It naturally controls its states via `= yield` syntax, e.g., it runs until it hits `yield` and waits for a consumer to `send` data. In other words, it acts in a concurrent manner. 
+A traditional coroutine focuses to deal with data as its consumer sends data (or exceptions) to it. It naturally controls its states via `= yield` syntax, e.g., it runs until it hits `yield` and waits for a consumer to `send` data. In other words, it acts in a concurrent manner. 
 
-With the advent of Python `asyncio` as standard library, [PEP 3156](https://www.python.org/dev/peps/pep-3156/#coroutines) made distinction of `@asyncio.coroutine`-decorated coroutine for suitable use of coroutines with `asyncio`. And this coroutine is called **generator-based coroutine** after the invention of **native coroutines**.
+With the advent of Python `asyncio` as standard library, [PEP 3156](https://www.python.org/dev/peps/pep-3156/#coroutines) made the distinction of `@asyncio.coroutine`-decorated coroutine for the suitable use of coroutines with `asyncio`. And this coroutine is called **generator-based coroutine** after the invention of **native coroutines**.
 
-As coroutines have done crucial roles in asynchronous works for Python, Python 3.5 introduced **native coroutines** with brand-new `async` and `await` keywords, to make significant difference of coroutines, especially with `asyncio`.
+As coroutines have done crucial roles in asynchronous works for Python, Python 3.5 introduced **native coroutines** with brand-new `async` and `await` keywords, to make the significant difference of coroutines, especially with `asyncio`.
 
 So, as the new keywords imply, native coroutines seem to take more weights on this waiting behavior for asynchronous handling in a single thread.
 
